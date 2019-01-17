@@ -1,6 +1,6 @@
 CREATE TABLE events (
 	id PRIMARY KEY,
-	host_id INTEGER REFERENCES users (id),
+	host_id INTEGER REFERENCES users(id),
 	thumbnail BLOB,
 	title TEXT,
 	description TEXT,
@@ -9,5 +9,7 @@ CREATE TABLE events (
 	address_line_3 TEXT,
 	city TEXT,
 	state VARCHAR(2),
-	zip_5 VARCHAR(5)
+	zip_5 VARCHAR(5),
+	created_at DATETIME,
+    updated_at DATETIME
 );
