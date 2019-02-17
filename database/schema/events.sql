@@ -10,6 +10,8 @@ CREATE TABLE events (
 	city TEXT,
 	state VARCHAR(2),
 	zip_5 VARCHAR(5),
+	start_time DATETIME,
+	end_time DATETIME,
 	created_at DATETIME,
     updated_at DATETIME
 );
